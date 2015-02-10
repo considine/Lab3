@@ -9,5 +9,5 @@ class CheckingAcc: public BankAccount {
 		void maketransfer(float b, CheckingAcc c); //transfer money to another account
 		void print(); //displays balance
 	private:
-		float balance; // amount left in account
+		float checkbalance; // amount left in account
  };

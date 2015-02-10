@@ -3,30 +3,30 @@
 using namespace std;
 
 CheckingAcc::CheckingAcc(float deposit) {
-
+	checkbalance = deposit;
 }
 
 float CheckingAcc::deposit(float action) {
-	balance += action;
+	checkbalance += action;
 
 	return action;
 }
 
 float CheckingAcc::withdraw(float action) {
-	balance -= action;
+	checkbalance -= action;
 
 	return (-1)*action;
 }
 
 void CheckingAcc::maketransfer(float b, CheckingAcc c) {
-	balance -= b;
-	c.balance += b;
-	
+	checkbalance -= b;
+	c.checkbalance += b;
+
 	return;
 }
 
 void CheckingAcc::print() {
-	cout << balance;
+	cout << checkbalance;
 
 	return;
 }

@@ -5,8 +5,10 @@ using namespace std;
 
 class CreditCard : public BankAccount {
 public:
-        	void makepayment(float);
-        	print(); //declares the current credit balance
+	CreditCard();
+	void makepurchase(float purch);
+	void makepayment(float pay);
+	void print(); //declares the current credit balance
 private:
-        	float creditbalance; // credit card balnac
+	float creditbalance; // credit card balance
 };
