@@ -1,11 +1,11 @@
-#ifndef
+#ifndef CHECKINGACC_H
 #define CHECKINGACC_H
 #include <iostream>
 #include "bankaccount.h"
 using namespace std;
 class CheckingAcc: public bankaccount {
 	public:
-		CheckingAcc(float);
+		CheckingAcc(float deposit);
 		float deposit(float action); //deposit money
 		float withdraw(float action); //withdraw money
 		void maketransfer(float b, CheckingAcc c); //transfer money to another account

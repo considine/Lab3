@@ -1,5 +1,5 @@
 //CreditCard.h
-#ifndef
+#ifndef CREDITCARD_H
 #define CREDITCARD_H
 #include <iostream>
 #include "bankaccount.h"
