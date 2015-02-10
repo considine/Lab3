@@ -1,4 +1,5 @@
 #include <iostream>
+#include "CheckingAcc.h"
 using namespace std;
 
 void maketransfer(float b, CheckingAcc c) {
