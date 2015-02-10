@@ -1,7 +1,9 @@
+#ifndef
+#define CHECKINGACC_H
 #include <iostream>
 #include "bankaccount.h"
 using namespace std;
-class CheckingAcc: public BankAccount {
+class CheckingAcc: public bankaccount {
 	public:
 		CheckingAcc(float);
 		float deposit(float action); //deposit money
@@ -11,3 +13,4 @@ class CheckingAcc: public BankAccount {
 	private:
 		float checkbalance; // amount left in account
  };
+ #endif

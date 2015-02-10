@@ -1,9 +1,11 @@
 //CreditCard.h
+#ifndef
+#define CREDITCARD_H
 #include <iostream>
 #include "bankaccount.h"
 using namespace std;
 
-class CreditCard : public BankAccount {
+class CreditCard: public bankaccount {
 public:
 	CreditCard();
 	void makepurchase(float purch);
@@ -12,3 +14,4 @@ public:
 private:
 	float creditbalance; // credit card balance
 };
+#endif

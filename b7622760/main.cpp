@@ -10,7 +10,7 @@ int main() {
 
 	CreditCard CreditCard;
 
-	CheckingAcc Account
+	CheckingAcc Account;
 
 	return 0;
 }
