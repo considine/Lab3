@@ -3,9 +3,11 @@
 using namespace std;
 class CheckingAcc: public BankAccount {
 	public:
-		float transact(float action); //deposit or withdraw money
-		void maketransfer(float b, CheckingAcc c); //deposit or withdraw money
-		print (); //declares the checking account balance
+		CheckingAcc(float);
+		float deposit(float action); //deposit money
+		float withdraw(float action); //withdraw money
+		void maketransfer(float b, CheckingAcc c); //transfer money to another account
+		void print(); //displays balance
 	private:
-		float checkbalance; // amount left in account
+		float balance; // amount left in account
  };
