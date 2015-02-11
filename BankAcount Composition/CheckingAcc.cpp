@@ -7,12 +7,12 @@
 using namespace std;
 
 CheckingAcc::CheckingAcc() {
-	setAccountNum(7146312);
+	bank.setAccountNum(7146312);
 }
 
 CheckingAcc::CheckingAcc(float num, string p) {
-	setAccountNum(num);
-	setPIN(p);
+	bank.setAccountNum(num);
+	bank.setPIN(p);
 	balance = 0; //sets beginning balance to zero
 }
 

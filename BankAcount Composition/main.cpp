@@ -38,7 +38,7 @@ int main() {
 		cout << "Would you like to access your checking account or manage your credit card?\n\n"
 		"1. Checking Account\n"
 		"2. Manage my Credit Card\n"
-		"0. Get me out of here!";
+		"0. Get me out of here!\n";
 		cin >> pick;
 
 		if (pick == 0) {

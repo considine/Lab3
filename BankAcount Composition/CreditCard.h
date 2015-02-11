@@ -8,7 +8,7 @@
 #include "BankAccount.h"
 using namespace std;
 
-class CreditCard: public BankAccount {
+class CreditCards {
 public:
 	CreditCard(float num, string p); //non default constructor
 	void makepurchase(float purch); //uses credit card to send money
@@ -18,5 +18,6 @@ public:
 private:
 	float balance; // credit card balance
 	float ceiling; // credit ceiling of card
+	BankAccount bank;
 };
 #endif

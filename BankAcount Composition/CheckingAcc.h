@@ -7,7 +7,7 @@
 #include <string>
 #include "BankAccount.h"
 using namespace std;
-class CheckingAcc: public BankAccount {
+class CheckingAcc {
 	public:
 		CheckingAcc(); //default constructor for dummy object
 		CheckingAcc(float num, string p); //non default constructor
@@ -17,5 +17,6 @@ class CheckingAcc: public BankAccount {
 		float getbalance(); //displays balance
 	private:
 		float balance; //amount left in account
+		BankAccount bank;
  };
  #endif

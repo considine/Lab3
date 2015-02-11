@@ -8,8 +8,8 @@ using namespace std;
 
 
 CreditCard::CreditCard(float num, string p) {
-	setAccountNum(num);
-	setPIN(p);
+	bank.setAccountNum(num);
+	bank.setPIN(p);
 	balance = 0; //No balance to start
 	ceiling = 1000; //credit ceiling that cannot be passed
 }
